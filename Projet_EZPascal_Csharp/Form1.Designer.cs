@@ -39,10 +39,13 @@ namespace Projet_EZPascal_Csharp
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.B_cancel = new System.Windows.Forms.Button();
             this.B_generate = new System.Windows.Forms.Button();
+            this.GB_title = new System.Windows.Forms.GroupBox();
+            this.TB_name = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.Num_NBex)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.N_sousExs)).BeginInit();
             this.groupBox2.SuspendLayout();
+            this.GB_title.SuspendLayout();
             this.SuspendLayout();
             // 
             // L_titleEZP
@@ -52,7 +55,7 @@ namespace Projet_EZPascal_Csharp
             this.L_titleEZP.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.L_titleEZP.Location = new System.Drawing.Point(0, 0);
             this.L_titleEZP.Name = "L_titleEZP";
-            this.L_titleEZP.Size = new System.Drawing.Size(305, 128);
+            this.L_titleEZP.Size = new System.Drawing.Size(308, 107);
             this.L_titleEZP.TabIndex = 0;
             this.L_titleEZP.Text = "EZ Pascal";
             this.L_titleEZP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -88,7 +91,7 @@ namespace Projet_EZPascal_Csharp
             this.groupBox1.Controls.Add(this.B_next);
             this.groupBox1.Controls.Add(this.B_previous);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(15, 202);
+            this.groupBox1.Location = new System.Drawing.Point(15, 284);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(278, 104);
             this.groupBox1.TabIndex = 2;
@@ -145,7 +148,7 @@ namespace Projet_EZPascal_Csharp
             // 
             this.groupBox2.Controls.Add(this.Num_NBex);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(15, 116);
+            this.groupBox2.Location = new System.Drawing.Point(15, 198);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(278, 68);
             this.groupBox2.TabIndex = 4;
@@ -155,7 +158,7 @@ namespace Projet_EZPascal_Csharp
             // B_cancel
             // 
             this.B_cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.B_cancel.Location = new System.Drawing.Point(48, 329);
+            this.B_cancel.Location = new System.Drawing.Point(48, 411);
             this.B_cancel.Name = "B_cancel";
             this.B_cancel.Size = new System.Drawing.Size(75, 23);
             this.B_cancel.TabIndex = 4;
@@ -165,13 +168,32 @@ namespace Projet_EZPascal_Csharp
             // 
             // B_generate
             // 
-            this.B_generate.Location = new System.Drawing.Point(172, 329);
+            this.B_generate.Location = new System.Drawing.Point(172, 411);
             this.B_generate.Name = "B_generate";
             this.B_generate.Size = new System.Drawing.Size(75, 23);
             this.B_generate.TabIndex = 5;
             this.B_generate.Text = "Générer";
             this.B_generate.UseVisualStyleBackColor = true;
             this.B_generate.Click += new System.EventHandler(this.B_generate_Click);
+            // 
+            // GB_title
+            // 
+            this.GB_title.Controls.Add(this.TB_name);
+            this.GB_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GB_title.Location = new System.Drawing.Point(12, 110);
+            this.GB_title.Name = "GB_title";
+            this.GB_title.Size = new System.Drawing.Size(280, 82);
+            this.GB_title.TabIndex = 6;
+            this.GB_title.TabStop = false;
+            this.GB_title.Text = "Titre du programme :";
+            // 
+            // TB_name
+            // 
+            this.TB_name.Location = new System.Drawing.Point(7, 26);
+            this.TB_name.Name = "TB_name";
+            this.TB_name.Size = new System.Drawing.Size(267, 26);
+            this.TB_name.TabIndex = 0;
+            this.TB_name.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Form1
             // 
@@ -180,7 +202,8 @@ namespace Projet_EZPascal_Csharp
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.CancelButton = this.B_cancel;
-            this.ClientSize = new System.Drawing.Size(305, 379);
+            this.ClientSize = new System.Drawing.Size(308, 460);
+            this.Controls.Add(this.GB_title);
             this.Controls.Add(this.B_generate);
             this.Controls.Add(this.B_cancel);
             this.Controls.Add(this.groupBox2);
@@ -195,6 +218,8 @@ namespace Projet_EZPascal_Csharp
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.N_sousExs)).EndInit();
             this.groupBox2.ResumeLayout(false);
+            this.GB_title.ResumeLayout(false);
+            this.GB_title.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -211,6 +236,8 @@ namespace Projet_EZPascal_Csharp
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button B_cancel;
         private System.Windows.Forms.Button B_generate;
+        private System.Windows.Forms.GroupBox GB_title;
+        private System.Windows.Forms.TextBox TB_name;
     }
 }
 
