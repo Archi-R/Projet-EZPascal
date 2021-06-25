@@ -107,7 +107,8 @@ namespace Projet_EZPascal_Csharp
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            name=this.name
+            name = this.TB_name.Text;
+            //if ((name.Ma
         }
     }
 }
