@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projet_EZPascal_Csharp", "Projet_EZPascal_Csharp.csproj", "{C2EE9E20-A571-4DD6-A2CE-53FED1B247D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2EE9E20-A571-4DD6-A2CE-53FED1B247D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2EE9E20-A571-4DD6-A2CE-53FED1B247D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2EE9E20-A571-4DD6-A2CE-53FED1B247D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2EE9E20-A571-4DD6-A2CE-53FED1B247D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DBEEECAA-1068-4B1C-884E-7AB8DA1349E9}
+	EndGlobalSection
+EndGlobal
