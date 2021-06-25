@@ -29,34 +29,34 @@ namespace Projet_EZPascal_Csharp
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.L_titleEZP = new System.Windows.Forms.Label();
             this.Num_NBex = new System.Windows.Forms.NumericUpDown();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.N_ = new System.Windows.Forms.NumericUpDown();
+            this.N_sousExs = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
-            this.B_previous = new System.Windows.Forms.Button();
             this.B_next = new System.Windows.Forms.Button();
+            this.B_previous = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.B_cancel = new System.Windows.Forms.Button();
             this.B_generate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Num_NBex)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.N_)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.N_sousExs)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // L_titleEZP
             // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Yu Gothic UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(305, 128);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "EZ Pascal";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.L_titleEZP.Dock = System.Windows.Forms.DockStyle.Top;
+            this.L_titleEZP.Font = new System.Drawing.Font("Yu Gothic UI", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.L_titleEZP.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.L_titleEZP.Location = new System.Drawing.Point(0, 0);
+            this.L_titleEZP.Name = "L_titleEZP";
+            this.L_titleEZP.Size = new System.Drawing.Size(305, 128);
+            this.L_titleEZP.TabIndex = 0;
+            this.L_titleEZP.Text = "EZ Pascal";
+            this.L_titleEZP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.L_titleEZP.Click += new System.EventHandler(this.label1_Click);
             // 
             // Num_NBex
             // 
@@ -83,7 +83,7 @@ namespace Projet_EZPascal_Csharp
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.N_);
+            this.groupBox1.Controls.Add(this.N_sousExs);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.B_next);
             this.groupBox1.Controls.Add(this.B_previous);
@@ -95,40 +95,29 @@ namespace Projet_EZPascal_Csharp
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nombres de sous-numéros";
             // 
-            // N_
+            // N_sousExs
             // 
-            this.N_.Location = new System.Drawing.Point(157, 59);
-            this.N_.Maximum = new decimal(new int[] {
+            this.N_sousExs.Location = new System.Drawing.Point(157, 59);
+            this.N_sousExs.Maximum = new decimal(new int[] {
             20,
             0,
             0,
             0});
-            this.N_.Name = "N_";
-            this.N_.Size = new System.Drawing.Size(115, 26);
-            this.N_.TabIndex = 0;
-            this.N_.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            this.N_sousExs.Name = "N_sousExs";
+            this.N_sousExs.Size = new System.Drawing.Size(115, 26);
+            this.N_sousExs.TabIndex = 0;
+            this.N_sousExs.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 59);
+            this.label2.Location = new System.Drawing.Point(12, 61);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(96, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Exercice X : ";
             this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // B_previous
-            // 
-            this.B_previous.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.B_previous.Location = new System.Drawing.Point(16, 20);
-            this.B_previous.Name = "B_previous";
-            this.B_previous.Size = new System.Drawing.Size(115, 22);
-            this.B_previous.TabIndex = 2;
-            this.B_previous.Text = "←";
-            this.B_previous.UseVisualStyleBackColor = true;
-            this.B_previous.Click += new System.EventHandler(this.B_previous_Click);
             // 
             // B_next
             // 
@@ -140,6 +129,17 @@ namespace Projet_EZPascal_Csharp
             this.B_next.Text = "→";
             this.B_next.UseVisualStyleBackColor = true;
             this.B_next.Click += new System.EventHandler(this.B_next_Click);
+            // 
+            // B_previous
+            // 
+            this.B_previous.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.B_previous.Location = new System.Drawing.Point(6, 20);
+            this.B_previous.Name = "B_previous";
+            this.B_previous.Size = new System.Drawing.Size(115, 22);
+            this.B_previous.TabIndex = 2;
+            this.B_previous.Text = "←";
+            this.B_previous.UseVisualStyleBackColor = true;
+            this.B_previous.Click += new System.EventHandler(this.B_previous_Click);
             // 
             // groupBox2
             // 
@@ -154,6 +154,7 @@ namespace Projet_EZPascal_Csharp
             // 
             // B_cancel
             // 
+            this.B_cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.B_cancel.Location = new System.Drawing.Point(48, 329);
             this.B_cancel.Name = "B_cancel";
             this.B_cancel.Size = new System.Drawing.Size(75, 23);
@@ -170,23 +171,29 @@ namespace Projet_EZPascal_Csharp
             this.B_generate.TabIndex = 5;
             this.B_generate.Text = "Générer";
             this.B_generate.UseVisualStyleBackColor = true;
+            this.B_generate.Click += new System.EventHandler(this.B_generate_Click);
             // 
             // Form1
             // 
+            this.AcceptButton = this.B_generate;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.CancelButton = this.B_cancel;
             this.ClientSize = new System.Drawing.Size(305, 379);
             this.Controls.Add(this.B_generate);
             this.Controls.Add(this.B_cancel);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.L_titleEZP);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "EZ Pascal";
             ((System.ComponentModel.ISupportInitialize)(this.Num_NBex)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.N_)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.N_sousExs)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -194,10 +201,10 @@ namespace Projet_EZPascal_Csharp
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label L_titleEZP;
         private System.Windows.Forms.NumericUpDown Num_NBex;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.NumericUpDown N_;
+        private System.Windows.Forms.NumericUpDown N_sousExs;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button B_next;
         private System.Windows.Forms.Button B_previous;

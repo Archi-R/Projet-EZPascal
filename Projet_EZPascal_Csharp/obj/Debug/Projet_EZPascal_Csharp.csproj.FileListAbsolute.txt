@@ -1,0 +1,10 @@
+F:\OneDrive - Université de Bourgogne\Cours\z.GitHub\Projet-EZPascal\Projet_EZPascal_Csharp\bin\Debug\Projet_EZPascal_Csharp.exe.config
+F:\OneDrive - Université de Bourgogne\Cours\z.GitHub\Projet-EZPascal\Projet_EZPascal_Csharp\bin\Debug\Projet_EZPascal_Csharp.exe
+F:\OneDrive - Université de Bourgogne\Cours\z.GitHub\Projet-EZPascal\Projet_EZPascal_Csharp\bin\Debug\Projet_EZPascal_Csharp.pdb
+F:\OneDrive - Université de Bourgogne\Cours\z.GitHub\Projet-EZPascal\Projet_EZPascal_Csharp\obj\Debug\Projet_EZPascal_Csharp.csprojAssemblyReference.cache
+F:\OneDrive - Université de Bourgogne\Cours\z.GitHub\Projet-EZPascal\Projet_EZPascal_Csharp\obj\Debug\Projet_EZPascal_Csharp.Form1.resources
+F:\OneDrive - Université de Bourgogne\Cours\z.GitHub\Projet-EZPascal\Projet_EZPascal_Csharp\obj\Debug\Projet_EZPascal_Csharp.Properties.Resources.resources
+F:\OneDrive - Université de Bourgogne\Cours\z.GitHub\Projet-EZPascal\Projet_EZPascal_Csharp\obj\Debug\Projet_EZPascal_Csharp.csproj.GenerateResource.cache
+F:\OneDrive - Université de Bourgogne\Cours\z.GitHub\Projet-EZPascal\Projet_EZPascal_Csharp\obj\Debug\Projet_EZPascal_Csharp.csproj.CoreCompileInputs.cache
+F:\OneDrive - Université de Bourgogne\Cours\z.GitHub\Projet-EZPascal\Projet_EZPascal_Csharp\obj\Debug\Projet_EZPascal_Csharp.exe
+F:\OneDrive - Université de Bourgogne\Cours\z.GitHub\Projet-EZPascal\Projet_EZPascal_Csharp\obj\Debug\Projet_EZPascal_Csharp.pdb
