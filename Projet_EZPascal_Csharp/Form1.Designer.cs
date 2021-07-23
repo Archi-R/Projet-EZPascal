@@ -41,6 +41,7 @@ namespace Projet_EZPascal_Csharp
             this.B_generate = new System.Windows.Forms.Button();
             this.GB_title = new System.Windows.Forms.GroupBox();
             this.TB_name = new System.Windows.Forms.TextBox();
+            this.l_nameError = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Num_NBex)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.N_sousExs)).BeginInit();
@@ -178,6 +179,7 @@ namespace Projet_EZPascal_Csharp
             // 
             // GB_title
             // 
+            this.GB_title.Controls.Add(this.l_nameError);
             this.GB_title.Controls.Add(this.TB_name);
             this.GB_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GB_title.Location = new System.Drawing.Point(12, 110);
@@ -194,6 +196,18 @@ namespace Projet_EZPascal_Csharp
             this.TB_name.Size = new System.Drawing.Size(267, 26);
             this.TB_name.TabIndex = 0;
             this.TB_name.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // l_nameError
+            // 
+            this.l_nameError.AutoSize = true;
+            this.l_nameError.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.l_nameError.ForeColor = System.Drawing.Color.Red;
+            this.l_nameError.Location = new System.Drawing.Point(5, 55);
+            this.l_nameError.Name = "l_nameError";
+            this.l_nameError.Size = new System.Drawing.Size(0, 17);
+            this.l_nameError.TabIndex = 1;
+            this.l_nameError.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l_nameError.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // Form1
             // 
@@ -238,6 +252,7 @@ namespace Projet_EZPascal_Csharp
         private System.Windows.Forms.Button B_generate;
         private System.Windows.Forms.GroupBox GB_title;
         private System.Windows.Forms.TextBox TB_name;
+        private System.Windows.Forms.Label l_nameError;
     }
 }
 
