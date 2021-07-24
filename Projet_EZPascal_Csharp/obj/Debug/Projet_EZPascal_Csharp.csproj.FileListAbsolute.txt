@@ -8,3 +8,13 @@ F:\OneDrive - Université de Bourgogne\Cours\z.GitHub\Projet-EZPascal\Projet_EZP
 F:\OneDrive - Université de Bourgogne\Cours\z.GitHub\Projet-EZPascal\Projet_EZPascal_Csharp\obj\Debug\Projet_EZPascal_Csharp.csproj.CoreCompileInputs.cache
 F:\OneDrive - Université de Bourgogne\Cours\z.GitHub\Projet-EZPascal\Projet_EZPascal_Csharp\obj\Debug\Projet_EZPascal_Csharp.exe
 F:\OneDrive - Université de Bourgogne\Cours\z.GitHub\Projet-EZPascal\Projet_EZPascal_Csharp\obj\Debug\Projet_EZPascal_Csharp.pdb
+C:\Users\Ronan\Desktop\Projet-EZPascal\Projet_EZPascal_Csharp\bin\Debug\Projet_EZPascal_Csharp.exe.config
+C:\Users\Ronan\Desktop\Projet-EZPascal\Projet_EZPascal_Csharp\bin\Debug\Projet_EZPascal_Csharp.exe
+C:\Users\Ronan\Desktop\Projet-EZPascal\Projet_EZPascal_Csharp\bin\Debug\Projet_EZPascal_Csharp.pdb
+C:\Users\Ronan\Desktop\Projet-EZPascal\Projet_EZPascal_Csharp\obj\Debug\Projet_EZPascal_Csharp.csprojAssemblyReference.cache
+C:\Users\Ronan\Desktop\Projet-EZPascal\Projet_EZPascal_Csharp\obj\Debug\Projet_EZPascal_Csharp.Form1.resources
+C:\Users\Ronan\Desktop\Projet-EZPascal\Projet_EZPascal_Csharp\obj\Debug\Projet_EZPascal_Csharp.Properties.Resources.resources
+C:\Users\Ronan\Desktop\Projet-EZPascal\Projet_EZPascal_Csharp\obj\Debug\Projet_EZPascal_Csharp.csproj.GenerateResource.cache
+C:\Users\Ronan\Desktop\Projet-EZPascal\Projet_EZPascal_Csharp\obj\Debug\Projet_EZPascal_Csharp.csproj.CoreCompileInputs.cache
+C:\Users\Ronan\Desktop\Projet-EZPascal\Projet_EZPascal_Csharp\obj\Debug\Projet_EZPascal_Csharp.exe
+C:\Users\Ronan\Desktop\Projet-EZPascal\Projet_EZPascal_Csharp\obj\Debug\Projet_EZPascal_Csharp.pdb

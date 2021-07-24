@@ -56,6 +56,7 @@ namespace Projet_EZPascal_Csharp
 
         private void Num_NBex_ValueChanged(object sender, EventArgs e)  //number of exercises
         {
+            //nb_ex = (int) Num_NBex.Value; //mis en com car fait dans le refresh
             refresh();
         }
 
@@ -72,6 +73,8 @@ namespace Projet_EZPascal_Csharp
             }
             exSelector = 1;
             Num_NBex.Value = 1;
+            N_sousExs.Value = 0;
+            TB_name.Text = "";
             refresh();
         }
 
@@ -100,36 +103,42 @@ namespace Projet_EZPascal_Csharp
 
         private void B_generate_Click(object sender, EventArgs e)       //generate the file
         {
-            Writing wr = new Writing(this.name,"PATH");
+            try
+            {
+                Writing wr = new Writing(name, name+".lpr");
+            
+                wr.entete(nb_ex);
+                //ecriture de l'entete du programme
 
-            wr.entete(nb_ex);
-            //ecriture de l'entete du programme
+                //boucle de création des exercices
+                for (int j = 1; j <= nb_ex; j++) {
+                    wr.numex_debut(j);          //écriture des numEx
 
-            //boucle de création des exercices
-            for (int j = 1; j <= nb_ex; j++) {
-                wr.numex_debut(j);          //écriture des numEx
+                    if (array_subExs[j] >= 2) { //!= 0
+                        wr.entete_SN();           //écriture de l'entête des sous num
 
-                if (array_subExs[j] != 0) {
-                    wr.entete_SN();           //écriture de l'entête des sous num
+                        for (int k=1;k<= array_subExs[j];k++)
+                        {
+                             wr.SN(k);            //écriture des sous num
+                        }
 
-                    for (int k=1;k<= array_subExs[j];k++)
-                    {
-                         wr.SN(k);            //écriture des sous num
+                        wr.SN_fin();              //écriture des fins des sousNum
                     }
-
-                    wr.SN_fin();              //écriture des fins des sousNum
+                    wr.numex_fin(j);
                 }
-                wr.numex_fin(j);
-            }
 
-            wr.FIN(nb_ex);                   //écriture de la fin du programme
+                wr.FIN(nb_ex);                   //écriture de la fin du programme
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Exception: " + ex.Message);
+            }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            name = this.TB_name.Text;
             string pattern_names = @"^CON$|^PRN$|^AUX$|^NUL$|^COM[0-9]$|^LPT[0-9]$"; //forbids to name file after forbidden windows names
-            Match m = Regex.Match(name, pattern_names, RegexOptions.IgnoreCase);
+            Match m = Regex.Match(TB_name.Text, pattern_names, RegexOptions.IgnoreCase);
             if (m.Success)
             {
                 this.l_nameError.Text = "Nom incorrect, veuillez en choisir un autre";
@@ -142,13 +151,14 @@ namespace Projet_EZPascal_Csharp
             }
 
             string pattern_chars = @"[^a-zA-Z0-9_\-]"; //forbids to name file with anything else than alphanumeric characters or "_" or "-"
-            m = Regex.Match(name, pattern_chars, RegexOptions.IgnoreCase);
+            m = Regex.Match(TB_name.Text, pattern_chars, RegexOptions.IgnoreCase);
             if (m.Success)
             {
                 this.TB_name.Text = this.TB_name.Text.Remove(this.TB_name.Text.Length - 1); //delete the unauthorized char
                 TB_name.SelectionStart = TB_name.Text.Length; //put the cursor at the end of the selection (bc if not, after typing an unauthorized char, it will go back to the beginning of the textbox, which is disturbing
             }
-  
+
+            name = this.TB_name.Text;
         }
 
         private void label1_Click_1(object sender, EventArgs e)

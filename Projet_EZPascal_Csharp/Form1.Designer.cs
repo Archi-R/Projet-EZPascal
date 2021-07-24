@@ -40,8 +40,8 @@ namespace Projet_EZPascal_Csharp
             this.B_cancel = new System.Windows.Forms.Button();
             this.B_generate = new System.Windows.Forms.Button();
             this.GB_title = new System.Windows.Forms.GroupBox();
-            this.TB_name = new System.Windows.Forms.TextBox();
             this.l_nameError = new System.Windows.Forms.Label();
+            this.TB_name = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.Num_NBex)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.N_sousExs)).BeginInit();
@@ -189,14 +189,6 @@ namespace Projet_EZPascal_Csharp
             this.GB_title.TabStop = false;
             this.GB_title.Text = "Titre du programme :";
             // 
-            // TB_name
-            // 
-            this.TB_name.Location = new System.Drawing.Point(7, 26);
-            this.TB_name.Name = "TB_name";
-            this.TB_name.Size = new System.Drawing.Size(267, 26);
-            this.TB_name.TabIndex = 0;
-            this.TB_name.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
             // l_nameError
             // 
             this.l_nameError.AutoSize = true;
@@ -209,12 +201,21 @@ namespace Projet_EZPascal_Csharp
             this.l_nameError.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.l_nameError.Click += new System.EventHandler(this.label1_Click_1);
             // 
+            // TB_name
+            // 
+            this.TB_name.Location = new System.Drawing.Point(7, 26);
+            this.TB_name.Name = "TB_name";
+            this.TB_name.Size = new System.Drawing.Size(267, 26);
+            this.TB_name.TabIndex = 0;
+            this.TB_name.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // Form1
             // 
             this.AcceptButton = this.B_generate;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.CancelButton = this.B_cancel;
             this.ClientSize = new System.Drawing.Size(308, 460);
             this.Controls.Add(this.GB_title);
