@@ -42,6 +42,11 @@ namespace Projet_EZPascal_Csharp
             this.GB_title = new System.Windows.Forms.GroupBox();
             this.l_nameError = new System.Windows.Forms.Label();
             this.TB_name = new System.Windows.Forms.TextBox();
+            this.RB_next = new Projet_EZPascal_Csharp.RoundedButton();
+            this.RB_previous = new Projet_EZPascal_Csharp.RoundedButton();
+            this.RB_cancel = new Projet_EZPascal_Csharp.RoundedButton();
+            this.RB_generate = new Projet_EZPascal_Csharp.RoundedButton();
+            this.roundedButton1 = new Projet_EZPascal_Csharp.RoundedButton();
             ((System.ComponentModel.ISupportInitialize)(this.Num_NBex)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.N_sousExs)).BeginInit();
@@ -87,6 +92,9 @@ namespace Projet_EZPascal_Csharp
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.roundedButton1);
+            this.groupBox1.Controls.Add(this.RB_previous);
+            this.groupBox1.Controls.Add(this.RB_next);
             this.groupBox1.Controls.Add(this.N_sousExs);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.B_next);
@@ -209,6 +217,52 @@ namespace Projet_EZPascal_Csharp
             this.TB_name.TabIndex = 0;
             this.TB_name.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // RB_next
+            // 
+            this.RB_next.Location = new System.Drawing.Point(127, 19);
+            this.RB_next.Name = "RB_next";
+            this.RB_next.Size = new System.Drawing.Size(144, 34);
+            this.RB_next.TabIndex = 4;
+            this.RB_next.Text = "→";
+            this.RB_next.UseVisualStyleBackColor = true;
+            // 
+            // RB_previous
+            // 
+            this.RB_previous.Location = new System.Drawing.Point(48, 35);
+            this.RB_previous.Name = "RB_previous";
+            this.RB_previous.Size = new System.Drawing.Size(75, 23);
+            this.RB_previous.TabIndex = 5;
+            this.RB_previous.Text = "←";
+            this.RB_previous.UseVisualStyleBackColor = true;
+            // 
+            // RB_cancel
+            // 
+            this.RB_cancel.Location = new System.Drawing.Point(79, 382);
+            this.RB_cancel.Name = "RB_cancel";
+            this.RB_cancel.Size = new System.Drawing.Size(75, 23);
+            this.RB_cancel.TabIndex = 7;
+            this.RB_cancel.Text = "Annuler";
+            this.RB_cancel.UseVisualStyleBackColor = true;
+            this.RB_cancel.Click += new System.EventHandler(this.roundedButton3_Click);
+            // 
+            // RB_generate
+            // 
+            this.RB_generate.Location = new System.Drawing.Point(211, 382);
+            this.RB_generate.Name = "RB_generate";
+            this.RB_generate.Size = new System.Drawing.Size(75, 23);
+            this.RB_generate.TabIndex = 8;
+            this.RB_generate.Text = "Générer";
+            this.RB_generate.UseVisualStyleBackColor = true;
+            // 
+            // roundedButton1
+            // 
+            this.roundedButton1.Location = new System.Drawing.Point(187, 35);
+            this.roundedButton1.Name = "roundedButton1";
+            this.roundedButton1.Size = new System.Drawing.Size(45, 46);
+            this.roundedButton1.TabIndex = 6;
+            this.roundedButton1.Text = "roundedButton1";
+            this.roundedButton1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AcceptButton = this.B_generate;
@@ -218,6 +272,8 @@ namespace Projet_EZPascal_Csharp
             this.BackColor = System.Drawing.SystemColors.Control;
             this.CancelButton = this.B_cancel;
             this.ClientSize = new System.Drawing.Size(308, 460);
+            this.Controls.Add(this.RB_generate);
+            this.Controls.Add(this.RB_cancel);
             this.Controls.Add(this.GB_title);
             this.Controls.Add(this.B_generate);
             this.Controls.Add(this.B_cancel);
@@ -254,6 +310,12 @@ namespace Projet_EZPascal_Csharp
         private System.Windows.Forms.GroupBox GB_title;
         private System.Windows.Forms.TextBox TB_name;
         private System.Windows.Forms.Label l_nameError;
+        private RoundedButton RB_previous;
+        private RoundedButton RB_next;
+        private RoundedButton RB_cancel;
+        private RoundedButton RB_generate;
+        private RoundedButton roundedButton1;
     }
+
 }
 
