@@ -1,4 +1,4 @@
-program test5;        //nom de votre programme
+program potat;        //nom de votre programme
 {
 Interface générique simple à remplir seulement entre les begin...end pour faire une suite d'exercices
 }
@@ -18,7 +18,7 @@ var                                 //vos variables   /!\Ne pas toucher à celle
 
 
 Begin 
-writeln('Tapez le numero de votre exercice que vous voulez executer(de 1 a 4):');
+writeln('Tapez le numero de votre exercice que vous voulez executer(de 1 a 3):');
 writeln('Ou tapez 0 si vous voulez sortir'); 
 readln(numeroEx);
 
@@ -27,53 +27,35 @@ while numeroEx <> 0 do
   case numeroEx of
        1:
          begin
-
+         //Inserez le code de l'ex 1
          end;                       //end de fin de numEx 1
        2:
          begin
-
+         //Inserez le code de l'ex 2
          end;                       //end de fin de numEx 2
        3:
          begin
-
          Writeln('Quel sous-numero ?');
          readln(sousNum);
          case sousNum of
-         1:
+         3:
            begin
-
-           end;                  //end de fin de sousNum 1
-
-         2:
-           begin
-
-           end;                  //end de fin de sousNum 2
-
-         end;                       //end de fin de Case sousNum of
-         end;                       //end de fin de numEx 3
-       4:
-         begin
-
-         Writeln('Quel sous-numero ?');
-         readln(sousNum);
-         case sousNum of
-         1:
-           begin
-
-           end;                  //end de fin de sousNum 1
-
-         2:
-           begin
-
-           end;                  //end de fin de sousNum 2
+           //Inserez le code de l'ex 1.3
+           end;                  //end de fin de sousNum 3
 
          3:
            begin
+           //Inserez le code de l'ex 2.3
+           end;                  //end de fin de sousNum 3
 
+         3:
+           begin
+           //Inserez le code de l'ex 3.3
            end;                  //end de fin de sousNum 3
 
          end;                       //end de fin de Case sousNum of
-         end;                       //end de fin de numEx 4
+
+         end;                       //end de fin de numEx 3
 else
   begin
   Writeln('Numero incorrect');
@@ -81,7 +63,7 @@ else
 
 end;                                //end de fin de Case numeroEx of 
 
-writeln('Tapez le numero de votre exercice que vous voulez executer (de 1 a 4):');
+writeln('Tapez le numero de votre exercice que vous voulez executer (de 1 a 3):');
 writeln('Ou tapez 0 si vous voulez sortir');
 readln(numeroEx);
 

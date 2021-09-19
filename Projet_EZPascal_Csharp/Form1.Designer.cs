@@ -228,6 +228,7 @@ namespace Projet_EZPascal_Csharp
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "EZ Pascal";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Num_NBex)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

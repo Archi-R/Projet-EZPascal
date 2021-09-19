@@ -58,8 +58,6 @@ namespace Projet_EZPascal_Csharp
             
             sw.WriteLine("       "+j+":");
             sw.WriteLine("         begin");
-            sw.WriteLine("");
-            
             sw.Close();                                 //close the file
         }
 
@@ -74,13 +72,13 @@ namespace Projet_EZPascal_Csharp
             sw.Close();                                 //close the file
         }
 
-        public void SN(int k)                       //the sub exs their "begin", numbers, and "end"
+        public void SN(int j, int k)                       //the sub exs their "begin", numbers, and "end"
         {//(k:integer; var fichier:text;nom:string)
             StreamWriter sw = new StreamWriter(path, true);   //open the file
 
             sw.WriteLine("         "+k+":");
             sw.WriteLine("           begin");
-            sw.WriteLine("");
+            sw.WriteLine("           //Inserez ici le code de l'ex "+j+"."+k);
             sw.WriteLine("           end;                  //end de fin de sousNum "+k);
             sw.WriteLine("");
             
@@ -96,10 +94,18 @@ namespace Projet_EZPascal_Csharp
             sw.Close();                                 //close the file
         }
 
-        public void numex_fin(int j)                //end of exerices "case of"
+        public void numex_fin(int j, int k)                //end of exerices "case of"
         {//(j:integer; var fichier:text;nom:string)
             StreamWriter sw = new StreamWriter(path, true);   //open the file
 
+            if (k == 0)
+            {
+                sw.WriteLine("         //Inserez ici le code de l'ex " + j);
+            }
+            else
+            {
+                sw.WriteLine("");
+            }
             sw.WriteLine("         end;                       //end de fin de numEx "+j);
 
             sw.Close();                                 //close the file
