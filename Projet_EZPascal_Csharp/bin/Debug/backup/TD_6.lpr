@@ -1,4 +1,4 @@
-program TD_5;        //nom de votre programme
+program TD_6;        //nom de votre programme
 {
 Interface générique simple à remplir seulement entre les begin...end pour faire une suite d'exercices
 }
