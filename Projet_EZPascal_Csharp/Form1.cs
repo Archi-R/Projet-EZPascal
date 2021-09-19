@@ -121,7 +121,7 @@ namespace Projet_EZPascal_Csharp
 
                         for (int k=1;k<= array_subExs[j];k++)
                         {
-                            wr.SN(k,j);            //écriture des sous num
+                            wr.SN(j,k);            //écriture des sous num
                             printed_k = k;
                         }
 
